@@ -27,12 +27,14 @@ Vue.material.theme.registerAll({
     }
 });
 
-const Foo = { template: '<div>foo</div>' };
-const Bar = { template: '<div>bar</div>' };
+var Rsvp = Vue.extend(require('./Rvsp.vue'));
+var Info = Vue.extend(require('./Info.vue'));
+var Map = Vue.extend(require('./Map.vue'));
 
 const routes = [
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar }
+    { path: '/rsvp', component: Rsvp },
+    { path: '/info', component: Info },
+    { path: '/map', component: Map },
 ];
 
 const router = new VueRouter({
@@ -40,5 +42,13 @@ const router = new VueRouter({
 });
 
 const app = new Vue({
-    router
+    router,
+    ready(){
+        router.push('info')
+    },
+    methods: {
+        open(link){
+            router.push(link);
+        }
+    }
 }).$mount('#app');
