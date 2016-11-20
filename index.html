@@ -14,9 +14,6 @@
 <body>
 
 <div id="app" v-md-theme="'default'">
-    <md-toolbar>
-        <div class="md-title">Ava's First Birthday Party</div>
-    </md-toolbar>
 
     <md-card>
         <md-card-media>
@@ -36,22 +33,38 @@
 
         <md-card-content>
             <div>
-                <span class="md-caption">WHEN:</span>
-                Saturday December 17th, 12pm to 3pm
+                <span class="md-caption">DATE:</span>
+                Saturday December 17th
+            </div>
+            <div>
+                <span class="md-caption">TIME:</span>
+                12pm to 3pm
             </div>
             <div>
                 <span class="md-caption">WHERE:</span>
                 1412 Hickory View Circle Parrish, FL 34219
             </div>
+            <br>
+            <div>
+                <span class="md-caption">WHAT:</span>
+                Ava's first birthday party which will be 'Dave & Ava' themed. Food and cake will be served and
+                the party will take place at Cindy's parent's house, come on out and celebrate Ava turning one with
+                us!
+            </div>
+
         </md-card-content>
     </md-card>
 
     <router-view></router-view>
 
     <md-bottom-bar>
+
         <md-bottom-bar-item md-icon="history">RSVP</md-bottom-bar-item>
+
         <md-bottom-bar-item md-icon="favorite" md-active>Information</md-bottom-bar-item>
+
         <md-bottom-bar-item md-icon="near_me">Directions</md-bottom-bar-item>
+
     </md-bottom-bar>
 </div>
 
