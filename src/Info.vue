@@ -1,9 +1,6 @@
 <template>
     <div>
         <md-card>
-            <md-card-media>
-                <img src="dist/dave-ava.jpg" alt="Dave and Ava">
-            </md-card-media>
 
             <md-card-header>
                 <div class="md-title">Ava's First Birthday Party</div>
@@ -12,8 +9,7 @@
 
             <md-card-actions>
                 <md-button class="md-raised md-primary">I can go!</md-button>
-                <md-button>or</md-button>
-                <md-button class="md-raised md-accent">I can't make it</md-button>
+                <md-button class="md-raised md-default">I can't make it</md-button>
             </md-card-actions>
 
             <md-card-content>
