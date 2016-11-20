@@ -9,7 +9,7 @@
         left: 0;
         right: 0;
         bottom: 40px;
-        top: 0;
+        top: -80px;
         z-index: 998;
     }
 </style>

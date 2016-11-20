@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Ava's First Birthday Party</title>
 
 
@@ -10,12 +10,21 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./dist/app.css">
 
+    <meta property="og:title" content="Ava's first birthday party"/>
+    <meta property="og:url" content="https://gjrdiesel.github.io/avas-1st-birthday/"/>
+    <meta property="og:site_name" content="RSVP for Ava's Birthday"/>
+    <meta property="og:description" content="Ava's first birthday party which will be 'Dave & Ava' themed. Food and cake will be served and
+                    the party will take place at Cindy's parent's house, come on out and celebrate Ava turning one with
+                    us!"/>
+    <meta property="og:image" content="https://gjrdiesel.github.io/avas-1st-birthday/dist/dave-ava.jpg" />
 </head>
 <body>
 
 <div id="app" v-md-theme="'default'">
 
-    <router-view></router-view>
+    <div id="content">
+        <router-view></router-view>
+    </div>
 
     <md-bottom-bar>
 
