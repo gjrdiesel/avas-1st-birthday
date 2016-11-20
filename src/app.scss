@@ -1,1 +1,23 @@
-@import "material"
+@import "material";
+
+body,html {
+  height: 100%;
+}
+
+body {
+  background-color:#d81b60;
+  background-image: url('./bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#app {
+  margin-bottom: 60px;
+}
+
+.md-bottom-bar.md-fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}

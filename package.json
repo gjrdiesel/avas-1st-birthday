@@ -16,6 +16,7 @@
     "vue-resource": "^1.0.3"
   },
   "dependencies": {
-    "vue-material": "^0.3.1"
+    "vue-material": "^0.3.1",
+    "vue-router": "^2.0.3"
   }
 }

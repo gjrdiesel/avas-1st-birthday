@@ -2316,4 +2316,22 @@
 .md-whiteframe-24dp {
   box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12); }
 
+body, html {
+  height: 100%; }
+
+body {
+  background-color: #d81b60;
+  background-image: url("./bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#app {
+  margin-bottom: 60px; }
+
+.md-bottom-bar.md-fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 999; }
+
 /*# sourceMappingURL=app.css.map */

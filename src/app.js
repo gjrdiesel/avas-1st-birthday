@@ -11,7 +11,9 @@ require('vue-resource');
 
 import Vue from 'vue'
 import VueMaterial from 'vue-material'
+import VueRouter from 'vue-router'
 
+Vue.use(VueRouter);
 Vue.use(VueMaterial);
 
 Vue.material.theme.registerAll({
@@ -23,8 +25,20 @@ Vue.material.theme.registerAll({
         primary: 'indigo',
         accent: 'pink'
     }
-})
+});
+
+const Foo = { template: '<div>foo</div>' };
+const Bar = { template: '<div>bar</div>' };
+
+const routes = [
+    { path: '/foo', component: Foo },
+    { path: '/bar', component: Bar }
+];
+
+const router = new VueRouter({
+    routes // short for routes: routes
+});
 
 const app = new Vue({
-    el: '#app'
-});
+    router
+}).$mount('#app');
