@@ -2,6 +2,10 @@
     <div>
         <md-card>
 
+            <md-card-media>
+                <img src="dist/dave-ava.jpg" alt="Dave and Ava">
+            </md-card-media>
+
             <md-card-header>
                 <div class="md-title">Ava's First Birthday Party</div>
                 <div class="md-subhead">Your invited! Please RVSP by December 12th.</div>
