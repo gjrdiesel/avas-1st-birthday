@@ -43,9 +43,8 @@
 
                 <br>
                 <span class="md-caption">Please RSVP by December 12th</span>
-                <router-link to="/rsvp" tag="span">
-                    <md-button class="md-primary">Click here to RSVP</md-button>
-                </router-link>
+
+                <br><br><br><br>
 
             </md-card-content>
         </md-card>
