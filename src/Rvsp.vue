@@ -50,7 +50,12 @@
           },
           send(){
               var url = 'https://a6ehjsmjqc.execute-api.us-east-1.amazonaws.com/dev/hello?name='+this.name+'&state='+this.state+'&msg='+this.msg;
-              this.$http.get(url);
+//              this.$http.get(url);
+              if( this.state == 'coming' ){
+                  swal("Sweet!", "We can't wait to see you! Thank you for RSVP'ing.", "success")
+              } else {
+                  swal("Ok!", "Thanks for letting us know, maybe we'll see you next year.")
+              }
           }
         },
         data(){

@@ -2323,11 +2323,9 @@ body {
   background-image: url(https://image.noelshack.com/fichiers/2015/12/1427051641-geometry.png); }
 
 #app {
-  overflow: hidden;
   height: 100%; }
 
 #content {
-  margin-bottom: 40px;
   height: 100%; }
 
 #content > div, .md-tabs, .md-tabs-content {
