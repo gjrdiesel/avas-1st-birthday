@@ -24,17 +24,17 @@
 
                 <md-input-container>
                     <label>Enter any comments</label>
-                    <md-textarea></md-textarea>
+                    <md-textarea v-model="msg"></md-textarea>
                 </md-input-container>
 
                 <md-button-toggle type="radio" class="md-button-group md-primary">
-                    <md-button class="md-toggle"><md-icon>thumb_up</md-icon> Coming</md-button>
-                    <md-button><md-icon>thumb_down</md-icon> Not coming</md-button>
+                    <md-button @click="setState('coming')" class="md-toggle"><md-icon>thumb_up</md-icon> Coming</md-button>
+                    <md-button @click="setState('not coming')"><md-icon>thumb_down</md-icon> Not coming</md-button>
                 </md-button-toggle>
 
                 <br>
 
-                <md-button id="sendBtn" class="md-raised md-accent"><md-icon>message</md-icon> Send</md-button>
+                <md-button id="sendBtn" class="md-raised md-accent" @click="send()"><md-icon>message</md-icon> Send</md-button>
 
             </md-tab>
 
@@ -49,5 +49,22 @@
     }
 </style>
 <script>
-    export default {}
+    export default {
+        methods: {
+          setState(state){
+              this.state = state;
+          },
+          send(){
+              var url = 'https://a6ehjsmjqc.execute-api.us-east-1.amazonaws.com/dev/hello?name='+this.name+'&state='+this.state+'&msg='+this.msg;
+              this.$http.get(url);
+          }
+        },
+        data(){
+            return {
+                name: '',
+                msg: '',
+                state: 'coming'
+            }
+        }
+    }
 </script>

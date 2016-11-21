@@ -35,7 +35,7 @@
 
                 var infowindow = new google.maps.InfoWindow({
                     content: "<h1>Ava's Birthday</h1>" +
-                    "<img src='http://i.imgur.com/J2m5PIv.png' width='80px' style='margin:10px;float:left;' alt='1412 Hickory View Circle Parrish, FL'>" +
+                    "<img src='https://i.imgur.com/J2m5PIv.png' width='80px' style='margin:10px;float:left;' alt='1412 Hickory View Circle Parrish, FL'>" +
                     "Held at 1412 Hickory View Circle Parrish, FL 34219 from 12pm to 3pm" +
                     " <a href='https://www.google.com/maps/dir//1412+Hickory+View+Circle,+Parrish,+FL/@27.524823,-82.378006,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88c3301ce4e26d89:0xaf70f2669e6f4e04!2m2!1d-82.375812!2d27.524823' class='md-raised md-accent'>Get Directions</a>"
                 });

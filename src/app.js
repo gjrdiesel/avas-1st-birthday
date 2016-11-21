@@ -37,13 +37,14 @@ const routes = [
     { path: '/map', component: Map },
 ];
 
-const router = new VueRouter({
+var router;
+window.router = router = new VueRouter({
     routes // short for routes: routes
 });
 
 const app = new Vue({
     router,
-    ready(){
+    mounted(){
         router.push('info')
     },
     methods: {
