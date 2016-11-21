@@ -42,12 +42,6 @@
 
     </div>
 </template>
-<style>
-    #sendBtn {
-        margin: 0;
-        float: right;
-    }
-</style>
 <script>
     export default {
         methods: {

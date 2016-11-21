@@ -3,16 +3,6 @@
         <div id="map"></div>
     </div>
 </template>
-<style>
-    #map {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 40px;
-        top: -80px;
-        z-index: 998;
-    }
-</style>
 <script>
     export default {
         mounted: function ()
