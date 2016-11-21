@@ -12,8 +12,12 @@
             </md-card-header>
 
             <md-card-actions>
-                <md-button class="md-raised md-primary" @click="setState('coming')">I can go!</md-button>
-                <md-button class="md-raised md-default" @click="setState('not coming')">I can't make it</md-button>
+                <router-link to="/rsvp">
+                    <md-button class="md-raised md-primary">I can go!</md-button>
+                </router-link>
+                <router-link to="/rsvp" tag="span">
+                    <md-button class="md-raised md-default">I can't make it</md-button>
+                </router-link>
             </md-card-actions>
 
             <md-card-content>
@@ -39,18 +43,14 @@
 
                 <br>
                 <span class="md-caption">Please RSVP by December 12th</span>
-                <md-button class="md-primary" @click="setState('coming')">Click here to RSVP</md-button>
+                <router-link to="/rsvp" tag="span">
+                    <md-button class="md-primary">Click here to RSVP</md-button>
+                </router-link>
 
             </md-card-content>
         </md-card>
     </div>
 </template>
 <script>
-    export default {
-        methods: {
-            setState(state){
-                router.push('rsvp');
-            }
-        }
-    }
+    export default {}
 </script>

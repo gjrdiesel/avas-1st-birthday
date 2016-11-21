@@ -33,20 +33,17 @@ var Map = Vue.extend(require('./Map.vue'));
 
 const routes = [
     { path: '/rsvp', component: Rsvp },
+    { path: '/', component: Info },
     { path: '/info', component: Info },
-    { path: '/map', component: Map },
+    { path: '/map', component: Map }
 ];
 
-var router;
-window.router = router = new VueRouter({
+const router = new VueRouter({
     routes // short for routes: routes
 });
 
 const app = new Vue({
     router,
-    mounted(){
-        router.push('info')
-    },
     methods: {
         open(link){
             router.push(link);
